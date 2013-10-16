@@ -1,0 +1,31 @@
+.header {
+    background: $color-white;
+    height: $header-height;
+    border-top: 4px solid #2889e9;
+    border-bottom: 1px solid #c4c4c4;
+    box-shadow: 0 3px 3px #ededed;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.header-inner {
+    width: $width-global;
+}
+
+.header-logo {
+    margin-top: 22px;
+    margin-left: 26px;
+}
+
+.header-nav {
+    margin-top: 35px;
+    margin-right: 32px;
+
+    a {
+        float: left;
+        margin-left: 40px;
+        padding: 0;
+    }
+}

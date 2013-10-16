@@ -1,0 +1,20 @@
+{
+  "name": "rashomon",
+  "version": "0.0.0",
+  "dependencies": {
+    "suit-base": "~0.2.0",
+    "suit-arrange": "~0.1.1",
+    "suit-button-group": "~1.2.0",
+    "suit-utils-display": "~0.2.2",
+    "suit-utils-layout": "~0.2.1",
+    "suit-utils-dimension": "~0.4.0",
+    "suit-utils-text": "~0.2.3",
+    "suit-utils-space": "~0.1.2",
+    "suit-utils-state": "~0.2.1",
+    "jquery": "~1.9.1",
+    "handlebars": "1.0.0",
+    "ember": "1.0.0",
+    "normalize-css": "~2.1.3"
+  },
+  "devDependencies": {}
+}
