@@ -1,0 +1,47 @@
+.btn-base {
+    color: $color-text;
+    padding: 0 30px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-appearance: none;
+}
+
+.btn {
+    @extend .btn-base;
+
+    cursor: pointer;
+    border: none;
+    background: $color-white;
+
+    &:hover, &:focus, &.btn-highlight {
+        color: $color-blue;
+        background: $color-white;
+
+        [class^="icon-"]:before, [class*=" icon-"]:before {
+            color: $color-blue;
+        }
+    }
+}
+
+.btn-medium {
+    @extend .rounded;
+
+    height: $btn-medium-height;
+    line-height: $btn-medium-height;
+}
+
+.btn-blue {
+    color: $color-white;
+    background: $color-blue-light;
+}
+
+.btn-red {
+    color: $color-white;
+    background: $color-red;
+}
+
+.btn-yellow {
+    color: $color-white;
+    background: $color-yellow;
+}

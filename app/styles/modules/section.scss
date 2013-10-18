@@ -1,0 +1,19 @@
+.section {
+    width: $width-global;
+}
+
+.section-content {
+    max-width: $width-global - $aside-width;
+    margin-top: 45px;
+}
+
+.section-header {
+    font-size: 30px;
+    line-height: 60px;
+    color: $color-blue;
+}
+
+.section-buttons {
+    padding-bottom: 60px;
+    border-bottom: 1px solid $color-gray-lighter;
+}

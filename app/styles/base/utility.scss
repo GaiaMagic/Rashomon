@@ -1,3 +1,11 @@
 .u-alignCenter {
     margin: 0 auto;
 }
+
+.muted {
+    color: $color-gray-light;
+}
+
+.rounded {
+    border-radius: $size-rounded;
+}

@@ -3,28 +3,24 @@ $color-black: #151515;
 
 $color-gray: #666;
 $color-gray-light: #a4a4a4;
-$color-gray-lighter: #f0f0f0;
+$color-gray-lighter: #c4c4c4;
 
-$color-blue-lighter: #b9dff4;
-$color-blue-light: #56bae8;
-$color-blue: #50aee4;
-$color-blue-dark: #3896cc;
-$color-blue-darker: #1a7cbb;
-$color-blue-banner: #48c1f4;
+$color-blue: #2889e9;
+$color-blue-light: #499ff3;
 
-$color-pink: #ee8383;
-
-$color-yellow: #eec146;
-
-$color-red: #e65147;
-$color-red-dark: #c03627;
+$color-yellow: #f5c853;
+$color-red: #ef6b74;
 
 /// Usages
 $color-text: $color-gray;
 $color-link: $color-blue;
-$color-link-hover: $color-blue-light;
+$color-link-hover: $color-blue;
+$size-rounded: 3px;
 
 $width-global: 960px;
+
+// == button ==
+$btn-medium-height: 36px;
 
 // == header ==
 $header-height: 100px;

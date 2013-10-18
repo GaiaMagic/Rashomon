@@ -28,5 +28,10 @@
         float: left;
         margin-left: 40px;
         padding: 0;
+        color: $color-gray-light;
+
+        &.active {
+            color: $color-blue;
+        }
     }
 }

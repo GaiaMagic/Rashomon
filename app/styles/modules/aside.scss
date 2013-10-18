@@ -3,8 +3,24 @@
     margin-top: 50px;
 }
 
-.aside-header {
+.aside-inner {
+    margin-left: 20px;
 }
 
-.aside-link {
+.aside-header {
+    line-height: 40px;
+    font-size: 20px;
+    color: $color-blue;
+}
+
+.aside-links {
+    a {
+        color: $color-gray-light;
+        line-height: 32px;
+        font-size: 16px;
+
+        &.active {
+            color: $color-aside-link-hover;
+        }
+    }
 }
