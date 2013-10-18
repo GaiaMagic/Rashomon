@@ -3,7 +3,7 @@
 }
 
 .section-content {
-    max-width: $width-global - $aside-width;
+    width: $width-global - $aside-width;
     margin-top: 45px;
 }
 
@@ -11,6 +11,7 @@
     font-size: 30px;
     line-height: 60px;
     color: $color-blue;
+    margin-bottom: 15px;
 }
 
 .section-buttons {
