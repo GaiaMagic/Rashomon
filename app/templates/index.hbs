@@ -3,51 +3,18 @@
 </div>
 
 <div id="products-musicianguide" class="section u-alignCenter">
-    <div class="aside u-pullLeft">
-        <div class="aside-inner">
-            <div class="aside-header u-marginBm">
-                产品与服务
-            </div>
-
-            <ul class='aside-links'>
-                <li>
-                    {{#link-to 'products.musicianguide'}}
-                        音乐人攻略
-                    {{/link-to}}
-                </li>
-                <li>
-                    {{#link-to 'products.hepaimusic'}}
-                        合拍
-                    {{/link-to}}
-                </li>
-                <li>
-                    {{#link-to 'products.youyanchu'}}
-                        有演出
-                    {{/link-to}}
-                </li>
-                <li>
-                    {{#link-to 'products.shenglijun'}}
-                        生力军计划
-                    {{/link-to}}
-                </li>
-                <li>
-                    {{#link-to 'products.sell'}}
-                        国外分销
-                    {{/link-to}}
-                </li>
-                <li>
-                    {{#link-to 'products.t-shirt'}}
-                        T恤印制
-                    {{/link-to}}
-                </li>
-                <li>
-                    {{#link-to 'products.store'}}
-                        音乐入库
-                    {{/link-to}}
-                </li>
-            </ul>
-        </div>
-    </div>
+    {{ section-aside
+         header='产品与服务'
+         links='[
+            { "name": "音乐人攻略", "route": "products.musicianguide" },
+            { "name": "合拍", "route": "products.hepaimusic" },
+            { "name": "友演出", "route": "products.youyanchu" },
+            { "name": "生力军计划", "route": "products.shenglijun" },
+            { "name": "国外分销", "route": "products.sell" },
+            { "name": "T恤印制", "route": "products.t-shirt" },
+            { "name": "音乐入库", "route": "products.store" }
+          ]'
+    }}
 
     <div class="section-content u-pullLeft">
         <h2 class="section-header">音乐人攻略</h2>
@@ -55,15 +22,25 @@
         <img src="/images/musicianguide.png" alt="音乐人攻略" />
 
         <p class="u-marginVl u-paddingRl">
-            音乐人攻略是国内领先音乐领域垂直媒体，专注服务音乐行业，提供前沿行业动态，
-            研究音乐类行销、演出、网络等领域。努力为音乐人、从业人员和音乐爱好资讯和攻略。
-            已推出到 iPhone 和 iPad 客户端，更方便为你推送第一手新闻资讯。
+            音乐人攻略是国内领先音乐领域垂直媒体，专注服务音乐行业，提供前沿行业动态，研究音乐类行销、演出、网络等领域。努力为音乐人、从业人员和音乐爱好资讯和攻略。已推出到 iPhone 和 iPad 客户端，更方便为你推送第一手新闻资讯。
         </p>
 
         <div class="section-buttons u-cf">
-            <a class="btn btn-medium btn-blue u-marginRl u-pullLeft" href="">官方网站</a>
-            <a class="btn btn-medium btn-red u-marginRl u-pullLeft" href="">新浪微博</a>
-            <a class="btn btn-medium btn-yellow u-pullLeft" href="">下载APP</a>
+            <a class="btn btn-medium btn-blue u-marginRl u-pullLeft"
+               href="http://musicianguide.cn"
+               target="_blank">
+                官方网站
+            </a>
+            <a class="btn btn-medium btn-red u-marginRl u-pullLeft"
+               href="http://weibo.com/musicianguidecn"
+               target="_blank">
+                新浪微博
+            </a>
+            <a class="btn btn-medium btn-yellow u-pullLeft"
+               href="https://itunes.apple.com/cn/app/yin-le-ren-gong-e/id654656930"
+               target="_blank">
+                下载APP
+            </a>
         </div>
     </div>
 </div>

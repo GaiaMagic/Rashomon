@@ -1,0 +1,17 @@
+<div class="aside u-pullLeft">
+    <div class="aside-inner">
+        <div class="aside-header u-marginBm">
+            {{header}}
+        </div>
+
+        <ul class='aside-links'>
+            {{#each links}}
+                <li>
+                    {{#link-to route}}
+                        {{name}}
+                    {{/link-to}}
+                </li>
+            {{/each}}
+        </ul>
+    </div>
+</div>
