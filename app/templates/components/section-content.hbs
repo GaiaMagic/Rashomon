@@ -1,0 +1,13 @@
+<div class="section-content u-pullLeft">
+    <h2 class="section-header">{{header}}</h2>
+    <img {{bind-attr src=image alt=header}} />
+    <p class="u-marginVl u-paddingRl">{{description}}</p>
+
+    <div class="section-buttons u-cf">
+        {{#each buttons}}
+            <a {{bind-attr class=":btn :btn-medium :u-marginRl :u-pullLeft style" href=url}} target="_blank">
+                {{name}}
+            </a>
+        {{/each}}
+    </div>
+</div>
