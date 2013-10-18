@@ -3,9 +3,10 @@
     height: $header-height;
     border-top: 4px solid #2889e9;
     border-bottom: 1px solid #c4c4c4;
-    box-shadow: 0 3px 3px #ededed;
+    /*box-shadow: 0 3px 3px #ededed;*/
     position: fixed;
     left: 0;
+    top: 0;
     right: 0;
     z-index: 99;
 }

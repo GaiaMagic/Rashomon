@@ -3,3 +3,10 @@
 @import "base/common";
 
 @import "modules/header";
+@import "modules/aside";
+@import "modules/section";
+
+.main {
+    margin-top: $header-height;
+    width: $width-global;
+}
