@@ -6,4 +6,4 @@ Rashomon.ApplicationView = Ember.View.extend
     unless Ember.isEmpty(target)
       $('html, body').animate
         scrollTop: target.offset().top - 100,
-        600
+        800
