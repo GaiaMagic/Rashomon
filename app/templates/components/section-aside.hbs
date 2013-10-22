@@ -5,10 +5,10 @@
         </div>
 
         <ul class='aside-links'>
-            {{#each links}}
+            {{#each link in links}}
                 <li>
-                    {{#link-to route}}
-                        {{name}}
+                    {{#link-to route link.position}}
+                        {{link.name}}
                     {{/link-to}}
                 </li>
             {{/each}}
