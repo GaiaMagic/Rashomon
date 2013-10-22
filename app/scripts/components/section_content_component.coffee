@@ -5,4 +5,5 @@ Rashomon.SectionContentComponent = Ember.Component.extend
 
   init: ->
     @_super()
-    @set('buttons', JSON.parse(@get('buttons')))
+    buttons = @get('buttons')
+    @set('buttons', JSON.parse(buttons)) if buttons

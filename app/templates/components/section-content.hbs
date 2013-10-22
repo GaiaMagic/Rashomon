@@ -7,11 +7,19 @@
 
     <p class="u-marginVl u-paddingRl">{{description}}</p>
 
-    <div class="section-buttons u-cf">
-        {{#each buttons}}
-            <a {{bind-attr class=":btn :btn-medium :u-marginRl :u-pullLeft style" href=url}} target="_blank">
-                {{name}}
-            </a>
-        {{/each}}
-    </div>
+    {{#if buttons}}
+        <div class="section-buttons u-cf">
+            {{#each buttons}}
+                {{#if url}}
+                    <a {{bind-attr class=":btn :btn-medium :u-marginRl :u-pullLeft style" href=url}} target="_blank">
+                        {{name}}
+                    </a>
+                {{else}}
+                    {{#link-to route position classBinding=":btn :btn-medium :u-marginRl :u-pullLeft style"}}
+                        {{name}}
+                    {{/link-to}}
+                {{/if}}
+            {{/each}}
+        </div>
+    {{/if}}
 </div>
