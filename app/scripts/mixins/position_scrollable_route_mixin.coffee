@@ -1,7 +1,9 @@
 Rashomon.PositionScrollableRouteMixin = Ember.Mixin.create
-  afterModel: (position) ->
+  afterModel: (params) ->
     currentScrollElement = @routeName
-    currentScrollElement = currentScrollElement + '-' + position if position
+    if params && params.position
+      currentScrollElement = currentScrollElement + '-' + params.position
+
     @controllerFor('application').set('currentScrollElement', currentScrollElement)
 
     target = $("##{currentScrollElement}")
