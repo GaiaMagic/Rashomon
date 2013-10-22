@@ -11,9 +11,9 @@
             { "name": "合拍", "position": "hepaimusic" },
             { "name": "友演出", "position": "youyanchu" },
             { "name": "生力军计划", "position": "shenglijun" },
-            { "name": "国外分销", "position": "sell" },
+            { "name": "国外分销", "position": "distribution" },
             { "name": "T恤印制", "position": "t-shirt" },
-            { "name": "音乐入库", "position": "store" }
+            { "name": "音乐入库", "position": "warehousing" }
           ]'
     }}
 
@@ -63,11 +63,11 @@
     }}
 
     {{section-content
-        for='products-sell'
+        for='products-distribution'
         header='国外分销'
-        image='/images/sell.png'
+        image='/images/distribution.png'
         buttons='[
-          { "name": "了解详情", "url": "TODO", "style": "btn-blue" }
+          { "name": "了解详情", "route": "distribution", "position": "intro", "style": "btn-blue" }
         ]'
         description='国外十多平台与地区免费上架，试运行期间，获得收入高达85%分成，仍然拥有版权完全权益，随时可取消授权，音乐人攻略团队出品，信誉保证。'
     }}
@@ -83,11 +83,11 @@
     }}
 
     {{section-content
-        for='products-store'
+        for='products-warehousing'
         header='音乐入库'
-        image='/images/store.png'
+        image='/images/warehousing.png'
         buttons='[
-          { "name": "了解详情", "url": "TODO", "style": "btn-blue" }
+          { "name": "了解详情", "route": "warehousing", "position": "intro", "style": "btn-blue" }
         ]'
         description='试运行期间，国内主流平台免费入库，百度、虾米、酷狗、多米、你听，更多平台即将开放，借助亿级用户平台，轻松展示你的音乐。音乐人攻略团队出品，信誉保证，正规版权代理合同保障，音乐人享受90%的版权费、付费下载收益。'
     }}

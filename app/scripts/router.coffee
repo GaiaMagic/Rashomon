@@ -1,4 +1,6 @@
 Rashomon.Router.map ->
-  @route 'index', path: '/'
-  @route 'products', path: '/products/:position'
-  @route 't-shirt', path: '/t-shirt/:position'
+  @route 'index'       , path: '/'
+  @route 't-shirt'     , path: '/t-shirt/:position'
+  @route 'products'    , path: '/products/:position'
+  @route 'warehousing' , path: '/warehousing/:position'
+  @route 'distribution', path: '/distribution/:position'
