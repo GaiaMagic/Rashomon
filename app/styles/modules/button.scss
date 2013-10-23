@@ -14,8 +14,8 @@
     border: none;
     background: $color-white;
 
-    &:hover, &:focus, &.btn-highlight {
-        color: $color-blue;
+    &:hover, &:focus {
+        color: $color-white;
         background: $color-white;
 
         [class^="icon-"]:before, [class*=" icon-"]:before {
@@ -34,14 +34,26 @@
 .btn-blue {
     color: $color-white;
     background: $color-blue-light;
+
+    &:hover, &:focus {
+        background: $color-blue-light;
+    }
 }
 
 .btn-red {
     color: $color-white;
     background: $color-red;
+
+    &:hover, &:focus {
+        background: $color-red;
+    }
 }
 
 .btn-yellow {
     color: $color-white;
     background: $color-yellow;
+
+    &:hover, &:focus {
+        background: $color-yellow;
+    }
 }
