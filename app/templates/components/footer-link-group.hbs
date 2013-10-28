@@ -7,7 +7,7 @@
         {{#each links}}
             <li {{bind-attr class="image:u-pullLeft image:image-link"}}>
                 {{#if image}}
-                    <a {{bind-attr href=url}}>
+                    <a {{bind-attr href=url}} target="_blank">
                         <img {{bind-attr src=image alt=name}} />
                     </a>
                 {{else}}
