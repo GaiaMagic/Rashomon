@@ -1,14 +1,14 @@
-<div class="footer-group u-paddingLl u-pullLeft">
+<div {{bind-attr class=":footer-group :u-paddingLl :u-pullLeft withImage"}}>
     <div class="footer-group-name u-marginBl">
         {{grouName}}
     </div>
 
     <ul>
         {{#each links}}
-            <li class="link">
-                {{#if url}}
+            <li {{bind-attr class="image:u-pullLeft image:image-link"}}>
+                {{#if image}}
                     <a {{bind-attr href=url}}>
-                        {{name}}
+                        <img {{bind-attr src=image alt=name}} />
                     </a>
                 {{else}}
                     {{#link-to route position}}

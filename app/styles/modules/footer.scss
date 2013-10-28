@@ -11,6 +11,14 @@
     width: $footer-group-width;
     margin-top: $footer-padding-top;
 
+    &.with-image {
+        width: $width-global - 4 * $footer-group-width;
+    }
+
+    .image-link {
+        margin-right: 25px;
+    }
+
     a {
         color: $color-text;
     }
