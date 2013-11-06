@@ -1,6 +1,11 @@
 .aside {
     width: $aside-width;
-    margin-top: 50px;
+    padding-top: 50px;
+
+    &.sticky {
+        position: fixed;
+        top: $header-height;
+    }
 }
 
 .aside-header {
