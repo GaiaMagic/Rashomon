@@ -1,17 +1,65 @@
 <div class="section u-alignCenter">
     {{section-aside
-         header='国外分销'
-         route='distribution'
-         links='[
+          header='国外分销'
+          route='distribution'
+          links='[
             { "name": "服务介绍", "position": "intro" },
             { "name": "FAQ", "position": "faq" }
           ]'
     }}
 
-    {{section-content
-        for='distribution-intro'
-        header='服务介绍'
-        image='/images/distribution.png'
-        description='国外十多平台与地区免费上架，试运行期间，获得收入高达85%分成，仍然拥有版权完全权益，随时可取消授权，音乐人攻略团队出品，信誉保证。'
+    {{#section-content
+           for='distribution-intro'
+           header='服务介绍'
+           image='/images/distribution.png'
+           description='国外十多平台与地区免费上架，试运行期间，获得收入高达85%分成，仍然拥有版权完全权益，随时可取消授权，音乐人攻略团队出品，信誉保证。' }}
+
+        <div class="section-sub-header">
+            支持多个平台和地区
+        </div>
+        <p>
+            iTunes, Amazon MP3, Google Play, Spotify, Rdio, Youtube, eMusic, XBox Music, Dreezer, RouteNote Direct
+        </p>
+
+        <div class="section-sub-header">
+            一次上传，全面进驻，从未如此简单
+        </div>
+        <ol class="section-steps">
+            <li>只需上传一次，即可进驻全部平台，省去逐一上传的烦恼</li>
+            <li>自主选择分销平台，按照你的意愿销售歌曲</li>
+            <li>更多新平台仍在扩展当中</li>
+        </ol>
+
+        <div class="section-sub-header">
+            收益分成，一目了然
+        </div>
+        <ol class="section-steps">
+            <li>通过数字下载分成，流媒体播放版权费获得国外收入</li>
+            <li>获得作品销售与版权最终收益85%</li>
+            <li>不必烦恼如何处理外汇，我们直接将人民币返还给你</li>
+            <li>每月定期发布报表，让你实时跟踪作品销售情况</li>
+        </ol>
+
+        <img class="distribution-flow" src="/images/distribution/flow.png" alt="flow" />
+
+        <div class="section-sub-header">
+            已上架音乐
+        </div>
+        <ol class="section-steps">
+            <li>Golden Cage 乐队：《How to Grow Old Gracefully》专辑</li>
+            <li>False Notice 乐队：《Dream A Dream》（逐梦记）专辑</li>
+            <li>Power Milk 乐队：《PM Cafe》专辑</li>
+        </ol>
+
+        <p class="u-marginTl">
+            <span>有意请联系： </span>
+            <a href="mailto:FX@gaiamagic.com">FX@gaiamagic.com</a>
+        </p>
+    {{/section-content}}
+
+    {{faq-content
+          header='FAQ'
+          for='distribution-faq'
+          faqList=model
     }}
 </div>

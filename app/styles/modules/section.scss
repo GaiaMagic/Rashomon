@@ -23,3 +23,21 @@
     padding-bottom: 60px;
     border-bottom: 1px solid $color-gray-lighter;
 }
+
+.section-sub-header {
+    font-size: 18px;
+    line-height: 36px;
+    color: $color-blue;
+    margin-top: 45px;
+    margin-bottom: 14px;
+}
+
+.section-steps {
+    list-style: decimal inside;
+}
+
+.faq-item {
+    .question {
+        color: $color-blue;
+    }
+}
