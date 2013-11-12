@@ -1,5 +1,5 @@
 Rashomon.PositionScrollableRouteMixin = Ember.Mixin.create
-  afterModel: (params) ->
+  model: (params) ->
     currentScrollElement = @routeName
     if params && params.position
       currentScrollElement = currentScrollElement + '-' + params.position
@@ -13,3 +13,5 @@ Rashomon.PositionScrollableRouteMixin = Ember.Mixin.create
       $('html, body').animate
         scrollTop: target.offset().top - 100,
         800
+
+    params

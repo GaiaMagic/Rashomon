@@ -1,5 +1,7 @@
 Rashomon.DistributionRoute = Ember.Route.extend Rashomon.PositionScrollableRouteMixin,
-  model: ->
+  model: (params) ->
+    @_super(params)
+
     [
       {
         question: '怎么参加分销业务',
