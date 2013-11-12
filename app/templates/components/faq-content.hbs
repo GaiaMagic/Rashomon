@@ -1,14 +1,21 @@
 <div {{bind-attr id=for}} class="section-content u-pullRight u-paddingBl u-marginBs">
     <h2 class="section-header">{{header}}</h2>
+
     {{#each faqList}}
         <div class="faq-item">
             <div class="question">
                 <span>Q: </span>
                 {{question}}？
             </div>
+
             <div class="answer u-paddingBm u-marginBl">
                 <span>A: </span>
-                {{answer}}
+
+                <span>{{answer}}</span>
+
+                {{#if image}}
+                    <img {{bind-attr src=image alt="image"}} class="u-marginTm u-marginBm" />
+                {{/if}}
             </div>
         </div>
     {{/each}}
