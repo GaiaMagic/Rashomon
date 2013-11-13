@@ -1,18 +1,4 @@
-<div class="header">
-    <div class="header-inner u-alignCenter">
-        {{#link-to 'index' class='header-logo u-inlineBlock'}}
-            <img src="/images/logo.png" alt="GaiaMagic" />
-        {{/link-to}}
-
-        <div class="header-nav u-pullRight">
-            {{#link-to 'index'}}首页{{/link-to}}
-            {{#link-to 'products' 'musicianguide'}}产品与服务{{/link-to}}
-            <a {{action 'scrollTo'}}>招聘</a>
-            <a {{action 'scrollTo'}}>关于</a>
-            <a {{action 'scrollTo'}}>博客</a>
-        </div>
-    </div>
-</div>
+{{partial 'header'}}
 
 <div class="app u-cf">
     {{outlet}}
