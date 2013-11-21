@@ -35,3 +35,6 @@ $footer-copyright-height: 40px;
 // == aside ==
 $aside-width: 192px;
 $color-aside-link-hover: #f3bd49;
+
+// == section ==
+$section-content-width: $width-global - $aside-width;

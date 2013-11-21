@@ -3,7 +3,7 @@
 }
 
 .section-content {
-    width: $width-global - $aside-width;
+    width: $section-content-width;
     margin-top: 45px;
 }
 
@@ -43,5 +43,19 @@
 .faq-item {
     .question {
         color: $color-blue;
+    }
+}
+
+.warehousing-intro-item {
+    width: ($section-content-width - 20) / 3;
+    padding-left: 36px;
+
+    &.first {
+        padding-left: 0;
+    }
+    
+    .name {
+        color: $color-yellow;
+        margin-top: 23px;
     }
 }
