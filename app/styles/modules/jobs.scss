@@ -1,0 +1,27 @@
+$xx: #f4f7f9;
+
+.jobs .job-item {
+    color: #666;
+    float: left;
+    width: 170px;
+    background-color: $xx;
+    text-align: center;
+
+    &.active {
+        background-color: $color-blue;
+        color: $color-white;
+    }
+}
+
+.section-list {
+    list-style: disc inside;
+}
+
+.job-description {
+    background-color: $xx;
+
+    .detail {
+        color: $color-blue;
+        font-size: 16px;
+    }
+}

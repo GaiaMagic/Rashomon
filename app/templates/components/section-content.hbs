@@ -1,11 +1,15 @@
 <div {{bind-attr id=for}} class="section-content u-pullRight">
     <h2 class="section-header">{{header}}</h2>
 
-    <div class="section-image-outer">
-        <img {{bind-attr src=image alt=header}} />
-    </div>
+    {{#if image}}
+        <div class="section-image-outer">
+            <img {{bind-attr src=image alt=header}} />
+        </div>
+    {{/if}}
 
-    <p class="u-marginVl u-paddingRl">{{description}}</p>
+    {{#if description}}
+        <p class="u-marginVl u-paddingRl">{{description}}</p>
+    {{/if}}
 
     {{#if buttons}}
         <div class="section-buttons u-cf">

@@ -1,0 +1,96 @@
+<div class="section u-alignCenter">
+    {{section-aside
+          header='招聘'
+          route='jobs'
+          links='[
+            { "name": "团队状况", "position": "intro" },
+            { "name": "招聘职位", "position": "titles" }
+          ]'
+    }}
+
+    {{#section-content
+           for='jobs-intro'
+           header='团队状况'}}
+
+        <div class="section-highlight u-marginBm u-fontSizeL">
+            我们用最大的诚意招募独一无二的人才。
+        </div>
+
+        <p>
+            每一封投递的简历创始人都会亲自回复；所有职位，即便是实习生的入职也需要全公司的认同；我们通过微博、豆瓣和博客展示公司各方面情况，为了让你减少对改变的不安。
+        </p>
+
+        <p class="u-marginTl">
+            我们总是在想，什么样的因素是一流人才所注重的，工作能带给一个人什么，什么 样的生活才有幸福感。所以我们在所有方面都努力做好，我们：
+        </p>
+
+        <ul class="section-list u-marginTs">
+            <li>
+                减少生活的麻烦，照顾好营养和口味。做到包吃包住，每天住家饭，每周煲靓汤，无限下午茶、水果和饮料。
+            </li>
+
+            <li>
+                单靠工资和奖金能过好日子之外，也让强人做到工字有出头，无论什么职位只要做到全国顶尖即可获得期权。
+            </li>
+
+            <li>
+                氛围舒服向上，没有办公室政治和无聊的KPI，和睦当中有充满诚实的沟通，一起为做更好的产品而奋斗。
+            </li>
+
+            <li>
+                强大的生产工具，从Trello、Github、Hipchat、Evernote、Dropbox，到苹果电脑、机械键盘、大屏幕。
+            </li>
+
+            <li>
+                每一个成员，即便是实习生都能调动全公司任何人帮其做项目，欢迎最有想法的你。
+            </li>
+
+            <li>
+                晋升没有时效性，有实力则自动成为骨干成员，享受期权、团队奖金、加薪。
+            </li>
+
+            <li>
+                所有付出都有数据体现，允许内部创业和拓展新业务，晋升阶梯触手可及，让人有盼头。
+            </li>
+
+            <li>
+                让一流的人只和一流的人协作，不为别人的不靠谱来埋单。
+            </li>
+
+            <li>
+                接受异地协作和SOHO，呼吸更好的空气，买得起房，打得到的士，孩子去得了好学校。
+            </li>
+        </ul>
+
+        <p class="u-marginTl">
+            以上几点是我们一直努力的。幸运的是，这个理想主义的公司在过去两年居然没有关张，一直在向梦想靠近。现在已经能做到一大半。
+        </p>
+
+        <p class="u-marginTl">
+            我们很傻气地追逐最有才能，最投入的，最符合价值观和气质的你。因为我们相信，只要人是对的，一切都是对的。
+        </p>
+
+        <p class="u-marginTl">
+            简历投递到：<a href="mailto:HR@gaiamagic.com">FX@gaiamagic.com</a>（收到自动回复视为投递成功）
+        </p>
+
+        <p class="u-marginTl">
+            不同职位对于简历有不同要求，我们为你介绍公司最详尽的信息，也希望你为我们准备眼前一亮的材料。以下岗位只要仍然显示，就代表始终在寻找。
+        </p>
+    {{/section-content}}
+
+    {{#section-content for='jobs-titles' header='招聘职位'}}
+        <div class="jobs u-cf">
+            {{#each job in model}}
+                {{job-item job=job
+                           currentSlug=currentSlug
+                           action="setCurrentSlug"
+                }}
+            {{/each}}
+        </div>
+
+        <div class="job-description rounded u-paddingAl u-marginVl">
+            {{currentContent}}
+        </div>
+    {{/section-content}}
+</div>

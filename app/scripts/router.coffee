@@ -4,3 +4,4 @@ Rashomon.Router.map ->
   @route 'products'    , path: '/products/:position'
   @route 'warehousing' , path: '/warehousing/:position'
   @route 'distribution', path: '/distribution/:position'
+  @route 'jobs'        , path: '/jobs/:position'
