@@ -12,11 +12,11 @@ Rashomon.WarehousingRoute = Ember.Route.extend Rashomon.PositionScrollableRouteM
         answer: '只要是你的原创歌曲或你已经获得原创歌曲的所有权便可。'
       },
       {
-        question: '原创歌曲需具备什么资格才能入库。',
+        question: '原创歌曲需具备什么资格才能入库',
         answer: '只要你的原创歌曲已经获得版权登记或者是曾经发行过（待与各平台确认后）。'
       },
       {
-        question: '我的音乐作品如何才能进行版权登记。',
+        question: '我的音乐作品如何才能进行版权登记',
         answer: '可以到国家版权局或中国音乐著作协会进行登记，还可授权我们帮助你登记，详情请点击浏览「歌曲版权注册」页面。'
       },
       {
