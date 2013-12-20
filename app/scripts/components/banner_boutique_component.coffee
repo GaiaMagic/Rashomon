@@ -18,14 +18,14 @@ Rashomon.BannerBoutiqueComponent = Ember.Component.extend
       front_img_height  : "auto"
       front_topmargin   : 0
 
-      behind_opacity    : 0.65
+      behind_opacity    : 1
       behind_topmargin  : 30
       behind_size       : 0.8
       behind_distance   : 45
 
       back_topmargin    : 65
       back_size         : 0.6
-      back_opacity      : 0.15
+      back_opacity      : 1
 
       text_front_only   : false
       text_opacity      : 1
