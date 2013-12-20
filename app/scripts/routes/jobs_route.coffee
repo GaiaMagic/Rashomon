@@ -120,7 +120,7 @@ Rashomon.JobsRoute = Ember.Route.extend Rashomon.PositionScrollableRouteMixin,
           <p class="u-marginTl detail">职责：</p>
 
           <ul class="section-list">
-              <li>管理音乐人攻略、合拍网和友演出的多个平台：微信、微博、小组、小站、论坛。</li>
+              <li>管理音乐人攻略、合拍网和有演出的多个平台：微信、微博、小组、小站、论坛。</li>
               <li>建立社区氛围、用户群。</li>
               <li>参与功能与设计调整，完善产品。</li>
               <li>处理反馈与投诉</li>
