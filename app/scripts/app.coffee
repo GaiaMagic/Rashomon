@@ -4,6 +4,7 @@ Rashomon = window.Rashomon = Ember.Application.create
 
 # Order and include as you please.
 require 'scripts/mixins/*'
+require 'scripts/models/*'
 require 'scripts/routes/*'
 require 'scripts/controllers/*'
 # require 'scripts/models/*'
