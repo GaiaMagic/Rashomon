@@ -1,1 +1,1 @@
-Rashomon.AboutRoute = Ember.Route.extend Rashomon.PositionScrollableRouteMixin
+Rashomon.AboutRoute = Ember.Route.extend Rashomon.ScrollableRouteMixin

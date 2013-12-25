@@ -1,1 +1,1 @@
-Rashomon.IndexRoute = Ember.Route.extend Rashomon.PositionScrollableRouteMixin
+Rashomon.IndexRoute = Ember.Route.extend Rashomon.ScrollableRouteMixin
