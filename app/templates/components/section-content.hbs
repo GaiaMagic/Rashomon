@@ -3,7 +3,11 @@
 
     {{#if image}}
         <div class="section-image-outer">
-            <img {{bind-attr src=image alt=header}} />
+            {{#if lazyImage}}
+                <img class="lazy" {{bind-attr data-original=image alt=header}} />
+            {{else}}
+                <img {{bind-attr src=image alt=header}} />
+            {{/if}}
         </div>
     {{/if}}
 
