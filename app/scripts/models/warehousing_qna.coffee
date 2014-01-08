@@ -8,12 +8,12 @@ Rashomon.WarehousingQnAFixtures = [
     answer: '只要是你的原创歌曲或你已经获得原创歌曲的所有权便可。'
   },
   {
-    question: '原创歌曲需具备什么资格才能入库',
-    answer: '只要你的原创歌曲已经获得版权登记或者是曾经发行过（待与各平台确认后）。'
+    question: '我的音乐作品如何才能进行版权登记',
+    answer: '可以到国家版权局或中国音乐著作协会进行登记，或者授权我们免费帮你登记。'
   },
   {
-    question: '我的音乐作品如何才能进行版权登记',
-    answer: '可以到国家版权局或中国音乐著作协会进行登记，还可授权我们帮助你登记，详情请点击浏览「歌曲版权注册」页面。'
+    question: '音乐入库需要提供什么资料',
+    answer: '音源、专辑介绍、艺人照片、专辑封面等，详情请联系客服，我们将会为你一一解答。'
   },
   {
     question: '翻唱的歌曲可以入库吗',
@@ -29,10 +29,10 @@ Rashomon.WarehousingQnAFixtures = [
   },
   {
     question: '歌曲格式要求',
-    answer: 'MP3格式（44.1khz、320kbps）。注：如果有WAV格式，也可以一同提供（此项还需与平台沟通）。'
+    answer: 'wav 格式（44.1khz、320kbps）'
   },
   {
     question: '如何终止合作',
-    answer: '你只需提前7个工作日通过发送邮件到RK@gaiamagic.com即可。'
+    answer: '你只需提前 30 个工作日通过发送邮件到 RK@gaiamagic.com 即可。'
   }
 ]
