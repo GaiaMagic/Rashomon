@@ -1,14 +1,14 @@
-<div {{bind-attr id=for}} class="section-content u-pullRight u-paddingBl u-marginBs">
+<div {{bind-attr id=for}} class="section-content u-pullRight">
     <h2 class="section-header">{{header}}</h2>
 
     {{#each faqList}}
-        <div class="faq-item">
+        <div class="faq-item u-paddingBm u-marginBl">
             <div class="question">
                 <span>Q: </span>
                 {{question}}？
             </div>
 
-            <div class="answer u-paddingBm u-marginBl">
+            <div class="answer">
                 <span>A: </span>
 
                 <span>{{answer}}</span>
