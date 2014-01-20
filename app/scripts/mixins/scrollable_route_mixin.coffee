@@ -10,7 +10,7 @@ Rashomon.ScrollableRouteMixin = Ember.Mixin.create
     # XXX Hardcode here with header-height
     unless Ember.isEmpty(target)
       $('html, body').animate
-        scrollTop: target.offset().top - 100,
+        scrollTop: target.offset().top - 80,
         800
 
     params

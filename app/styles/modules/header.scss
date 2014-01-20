@@ -16,12 +16,11 @@
 }
 
 .header-logo {
-    margin-top: 22px;
     margin-left: 26px;
+    line-height: $header-height;
 }
 
 .header-nav {
-    margin-top: 35px;
     margin-right: 32px;
 
     a {
@@ -29,6 +28,7 @@
         margin-left: 40px;
         padding: 0;
         color: $color-gray-light;
+        line-height: $header-height;
 
         &.active {
             color: $color-blue;

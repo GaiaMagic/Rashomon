@@ -10,6 +10,6 @@ Rashomon.ScrollableViewMixin = Ember.Mixin.create
     # XXX hardcode here with header-height
     unless Ember.isEmpty(target)
       $('html, body').animate
-        scrollTop: target.offset().top - 100,
+        scrollTop: target.offset().top - 80,
         800
 

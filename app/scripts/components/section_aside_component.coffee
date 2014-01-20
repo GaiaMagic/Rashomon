@@ -15,7 +15,7 @@ Rashomon.SectionAsideComponent = Ember.Component.extend Rashomon.ScrollingMixin,
   scrolled: ->
     aside = $(".#{@get('asideClass')}")
     windowTop = $(window).scrollTop()
-    headerHeight = 100 # XXX Hardcode here with header-height
+    headerHeight = 80 # XXX Hardcode here with header-height
 
     @set('asidePosition', aside.offset().top) unless @get('asidePosition')
     asideTop = @get('asidePosition')
