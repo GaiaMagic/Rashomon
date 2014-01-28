@@ -51,12 +51,8 @@
 }
 
 .warehousing-intro-item {
-    width: ($section-content-width - 20) / 3;
-    padding-left: 36px;
-
-    &.first {
-        padding-left: 0;
-    }
+    width: $section-content-width / 4;
+    margin-bottom: 45px;
     
     .name {
         color: $color-yellow;

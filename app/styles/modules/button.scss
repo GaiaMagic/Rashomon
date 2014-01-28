@@ -57,3 +57,12 @@
         background: $color-yellow;
     }
 }
+
+.btn-taobao {
+    color: $color-white;
+    background: #fc8220;
+
+    &:hover, &:focus {
+        background: #fc8220;
+    }
+}

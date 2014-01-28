@@ -1,4 +1,6 @@
 <div {{bind-attr class="first :warehousing-intro-item :u-pullLeft"}}>
-    <img {{bind-attr src=image alt=name}} class="u-alignCenter u-block" />
-    <h4 class="name u-textCenter">{{name}}</h4>
+    <a {{bind-attr href=url}} target="_blank">
+        <img {{bind-attr src=image alt=name}} class="u-alignCenter u-block" />
+        <h4 class="name u-textCenter">{{name}}</h4>
+    </a>
 </div>
