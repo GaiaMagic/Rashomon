@@ -1,5 +1,5 @@
 Rashomon.JobsController = Ember.ArrayController.extend
-  currentSlug: 'engineer'
+  currentSlug: 'rails'
 
   currentContent: (->
     @get('model').

@@ -1,28 +1,15 @@
 Rashomon.JobsFixtures = [
   {
-    title: "前端/后端/iOS工程师",
-    slug: 'engineer',
+    title: 'Rails 工程师',
+    slug: 'rails',
     content_html: '
-      <p>
-          对于真正懂车的人来说，只有引擎才是一辆车的灵魂。GaiaMagic 从一开始就是希望通过技术的手段去改变音乐的一端，因此技术力量便是我们的引擎。
-      </p>
-
-      <p class="u-marginTl">
-          感谢一切，让我们能坚持建立起真正的黑客文化，这样你就能蔑视权威去改变所有不合理的地方。你有一切的选择权去赞成或反对所有自己做的事情，没有傻帽的管理层和产品经理告诉你应该做什么功能。
-      </p>
-
-      <p class="u-marginTl">
-          我们可以在这个阶段承诺的是，没有一个岗位能比工程师享有更高的待遇。
-      </p>
-
-      <p class="u-marginTl detail">
+      <p class="detail">
           技术栈：
       </p>
 
       <ul class="section-list">
           <li>Ruby &amp;&amp; Rails &amp;&amp; RSpec</li>
-          <li>MongoDB &amp;&amp; Mongoid</li>
-          <li>Redis</li>
+          <li>MongoDB &amp;&amp; PostgreSQL &amp;&amp; Redis</li>
           <li>JavaScript &amp;&amp; CoffeeScript &amp;&amp; jQuery</li>
           <li>SASS</li>
           <li>Git</li>
@@ -35,7 +22,6 @@ Rashomon.JobsFixtures = [
 
       <ul class="section-list">
           <li>Vim || Emacs</li>
-          <li>AngularJS || Ember.js 等其它相似的前端 MVC 框架</li>
           <li>对其他语言也有了解，如 Python、PHP 等</li>
           <li>参与过开源项目并有所贡献</li>
           <li>有独立的技术 Blog</li>
@@ -46,8 +32,69 @@ Rashomon.JobsFixtures = [
       </p>
 
       <ul class="section-list">
-        <li>参与过的项目或直接GitHub账号</li>
-        <li>你最欣赏的网站或者手机APP </li>
+        <li>参与过的项目或直接 GitHub 账号</li>
+        <li>你最欣赏的网站或者手机 APP </li>
+      </ul>
+    '
+  },
+  {
+    title: '前端工程师',
+    slug: 'frontend',
+    content_html: '
+      <p class="detail">
+          技术栈：
+      </p>
+
+      <ul class="section-list">
+          <li>JavaScript && Html5 && CSS3 && jQuery</li>
+          <li>Git</li>
+          <li>Mac || Linux</li>
+          <li>AngularJS || Ember.js 等其它相似的前端 MVC 框架</li>
+      </ul>
+
+      <p class="u-marginTl detail">
+          加分项：
+      </p>
+
+      <ul class="section-list">
+          <li>Vim || Emacs</li>
+          <li>对其他语言也有了解，如 Ruby、Python 等</li>
+          <li>参与过开源项目并有所贡献</li>
+          <li>有独立的技术 Blog</li>
+      </ul>
+
+      <p class="u-marginTl detail">
+          简历请附：
+      </p>
+
+      <ul class="section-list">
+        <li>参与过的项目或直接 GitHub 账号</li>
+        <li>你最欣赏的网站或者手机 APP </li>
+      </ul>
+    '
+  },
+  {
+    title: "iOS 工程师",
+    slug: 'ios',
+    content_html: '
+      <ul class="section-list">
+          <li>活的</li>
+          <li>能做出牛逼 APP 的</li>
+          <li>有音频、音乐类、交易类开发经验更佳</li>
+          <li>简历附上自己欣赏的 APP 和原因</li>
+      </ul>
+    '
+  },
+  {
+    title: "安卓工程师",
+    slug: 'android',
+    content_html: '
+      <ul class="section-list">
+          <li>活的</li>
+          <li>能做出牛逼 APP 的</li>
+          <li>能很好兼容多种屏幕尺寸和性能</li>
+          <li>有音频、音乐类、交易类开发经验更佳</li>
+          <li>简历附上自己欣赏的 APP 和原因</li>
       </ul>
     '
   },
@@ -100,74 +147,53 @@ Rashomon.JobsFixtures = [
     '
   },
   {
-    title: "运营总监",
-    slug: 'yunying',
+    title: "项目经理",
+    slug: 'project-manager',
     content_html: '
-      <p>当这个世界变得分散且去中心化的时候，我们就知道世界的权力应该重新分配给创造价值的人。</p>
-
-      <p class="u-marginTl">
-          而我们心目中的运营总监，是可以将我们的价值最大化体现出来的人。如果说市场总监是对外沟通合作，吸引别人关注我们的，那么运营就是对内施展魔法，让公司和产品的魅力自然散发出来的人。
+      <p>
+          我们产品包括音乐人攻略、合拍音乐、有演出，音乐产业里基本没有不能合作的小伙伴了。所以我们需要多名有独特资源、有创意、能谈合作、能执行的项目经理。我们对所有能产生影响力，能带来改变，能获得用户，能帮助音乐人的任何合作感兴趣。你可以带着自己的创意过来，用我们的资源去实现。
       </p>
 
-      <p class="u-marginTl">
-          因此，我们寻找一名能让我们产品变得更加丰满和实在的主理人。
-      </p>
-
-      <p class="u-marginTl detail">职责：</p>
-
-      <ul class="section-list">
-          <li>管理音乐人攻略、合拍网和有演出的多个平台：微信、微博、小组、小站、论坛。</li>
-          <li>建立社区氛围、用户群。</li>
-          <li>参与功能与设计调整，完善产品。</li>
-          <li>处理反馈与投诉</li>
-          <li>建立与管理 FAQ 与 Blog</li>
-      </ul>
-
-      <p class="u-marginTl detail">要求：</p>
-
-      <ul class="section-list">
-          <li>熟悉各个平台的用户特性和推广方法</li>
-          <li>熟悉社区运营，对人性有一定洞察</li>
-          <li>对科技与趋势敏感，能抓住发展机会</li>
+      <ul class="section-list u-marginTl">
+          <li>演出、版权、音乐制作与出版、现场活动、经纪等领域都欢迎</li>
+          <li>工作地点不限，全职兼职项目制都可</li>
       </ul>
     '
   },
   {
-    title: "音乐人攻略",
-    slug: 'MG'
+    title: "媒体与对外宣传",
+    slug: 'bd',
     content_html: '
-      <p>音乐人攻略是我们目前做出来对音乐领域最有价值的产品。</p>
+      <p>负责我们产品的媒体方向的对外宣传，将我们的理念最大限度地传递出去，在合作伙伴和用户心目中建立起我们的品牌。</p>
 
-      <p class="u-marginTl">
-          如果这个世界是一个圆，那么做音乐人攻略的感觉就是站在这个圆的边缘，每向前走一步，世界就因为这个举动而扩大一点。
-      </p>
-
-      <p class="u-marginTl">
-          向音乐人和从业者报道最新的新闻和攻略，帮有价值的团队和产品进行宣传，整理出一套音乐人需要的全套教程等等……都是在未来会激起火花的做法。
-      </p>
-
-      <p class="u-marginTl">
-          因此我们寻找一名对音乐充满热诚，兼具视野和文笔的布道者。
-      </p>
-
-      <p class="u-marginTl detail">职责：</p>
-
-      <ul class="section-list">
-          <li>撰写、采访、摘录产业类、音乐类、推荐类文章</li>
-          <li>主导各个平台的运营策略</li>
-          <li>建立更快更好的信息源与行内合作关系</li>
-          <li>招募与管理志愿者团队</li>
-          <li>辅助线下活动</li>
-          <li>策划专题活动与选题</li>
+      <ul class="section-list u-marginTl">
+          <li>文案了得，创意十足，游刃跳转在产品介绍、微博、通稿、专题页</li>
+          <li>拥有大量媒体资源，音乐、商业、科技、创业的新媒体纸媒通杀</li>
+          <li>社交狂，低头党，自来熟，开拓能力一流</li>
       </ul>
-
-      <p class="u-marginTl detail">要求：</p>
-
+    '
+  },
+  {
+    title: "有演出运营总监",
+    slug: 'youyanchu'
+    content_html: '
       <ul class="section-list">
-          <li>英语能力强</li>
-          <li>有编辑背景，音乐类更佳</li>
-          <li>了解音乐与音乐行业</li>
-          <li>有一定行业资源</li>
+          <li>与主办方、票务方、场地方、音乐节建立紧密关系，开展合作</li>
+          <li>带领团队推动全国线下活动</li>
+          <li>有大型票务公司工作经验更佳</li>
+      </ul>
+    '
+  },
+  {
+    title: "音乐人攻略编辑",
+    slug: 'mg'
+    content_html: '
+      <ul class="section-list">
+          <li>撰写音乐终极攻略系列文章，能采访，文笔好</li>
+          <li>了解音乐行业</li>
+          <li>对音乐人推广、演出、经营、版权、乐器、电脑音乐、制作等领域有所了解</li>
+          <li>有一定行业资源与人脉</li>
+          <li>英语好，有媒体经验更佳</li>
       </ul>
     '
   }

@@ -1,6 +1,6 @@
 Rashomon.JobItemComponent = Ember.Component.extend
   tagName: 'a'
-  classNameBindings: [':job-item', ':rounded', ':u-marginRm', ':u-paddingVs', 'active']
+  classNameBindings: [':job-item', ':rounded', ':u-marginRm', ':u-marginBm', ':u-paddingVs', 'active']
 
   active: (->
     @get('job').slug == @get('currentSlug')
