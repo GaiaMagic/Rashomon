@@ -23,9 +23,13 @@
                         {{name}}
                     </a>
                 {{else}}
-                    {{#link-to route position classBinding=":btn :btn-medium :u-marginRl :u-pullLeft style"}}
-                        {{name}}
-                    {{/link-to}}
+                    {{#if popover}}
+                        {{popover-button name=name content=popover style=style}}
+                    {{else}}
+                        {{#link-to route position classBinding=":btn :btn-medium :u-marginRl :u-pullLeft style"}}
+                            {{name}}
+                        {{/link-to}}
+                    {{/if}}
                 {{/if}}
             {{/each}}
         </div>

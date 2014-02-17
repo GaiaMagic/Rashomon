@@ -49,6 +49,15 @@
     }
 }
 
+.btn-green {
+    color: $color-white;
+    background: #84cc53;
+
+    &:hover, &:focus {
+        background: #79bc4c;
+    }
+}
+
 .btn-yellow {
     color: $color-white;
     background: $color-yellow;
