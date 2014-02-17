@@ -9,10 +9,10 @@
     "suit-utils-space": "~0.1.2",
     "suit-utils-state": "~0.2.1",
     "normalize-css": "~2.1.3",
-    "jquery": "~1.9.1",
+    "jquery": "~1.11.0",
     "handlebars": "~1.3.0",
-    "ember": "~1.4.0-beta.2",
-    "jquery.lazyload": "~1.9.1"
+    "ember": "~1.4.0",
+    "jquery.lazyload": "~1.9.3"
   },
   "devDependencies": {}
 }
