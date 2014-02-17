@@ -78,7 +78,6 @@ Rashomon.JobsFixtures = [
     slug: 'ios',
     content_html: '
       <ul class="section-list">
-          <li>活的</li>
           <li>能做出牛逼 APP 的</li>
           <li>有音频、音乐类、交易类开发经验更佳</li>
           <li>简历附上自己欣赏的 APP 和原因</li>
@@ -90,7 +89,6 @@ Rashomon.JobsFixtures = [
     slug: 'android',
     content_html: '
       <ul class="section-list">
-          <li>活的</li>
           <li>能做出牛逼 APP 的</li>
           <li>能很好兼容多种屏幕尺寸和性能</li>
           <li>有音频、音乐类、交易类开发经验更佳</li>

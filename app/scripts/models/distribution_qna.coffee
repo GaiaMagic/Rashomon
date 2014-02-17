@@ -6,7 +6,7 @@ Rashomon.DistributionQnAFixtures = [
   {
     question: '什么是海外分销服务',
     answer: '就是我们帮你把音乐放到海外各大音乐平台例如：iTunes, Amazon MP3,
-             Google Play, Spotify, Rdio, eMusic, RouteNote Direct, Xbox, Deezer
+             Google Play, Spotify, Rdio, eMusic, Xbox, Deezer
              等进行销售，你可以选择其中几个或全部平台上。'
   },
   {
