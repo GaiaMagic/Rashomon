@@ -3,7 +3,10 @@ Rashomon.PopoverButtonComponent = Ember.Component.extend
 
   didInsertElement: ->
     content = @get('content')
-    btn = $(@get('element')).find('.' + @get('popoverBtnClass'))
+    _class = '.' + @get('popoverBtnClass')
+
+    btn = $(@get('element')).find(_class)
+    allBtn = $(_class)
 
     btn.popover
       html: true
@@ -11,3 +14,6 @@ Rashomon.PopoverButtonComponent = Ember.Component.extend
       trigger: 'click'
       placement: 'top'
       content: content
+
+    btn.on 'show.bs.popover', ->
+      allBtn.popover('hide')
