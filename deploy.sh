@@ -12,8 +12,8 @@ SHA=$2
 TIMEOUT=120   # ssh connection timeout, recommand 60s
 TARGET="/home/deploy/projects/Rashomon/releases"
 LINK="/home/deploy/projects/Rashomon/dist"
-DIR=`git log | head -n 1 | tail -c 41`
-# DIR=`date +%Y%m%d%H%M`
+#DIR=`git log | head -n 1 | tail -c 41`
+DIR=`date +%Y%m%d%H%M%s`
 
 # rollback to specific distribution according to the commit SHA
 if [ "$SHA" ]; then
