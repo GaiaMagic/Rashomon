@@ -6,3 +6,7 @@ Rashomon.Router.map ->
   @route 'distribution', path: '/distribution/:position'
   @route 'jobs'        , path: '/jobs/:position'
   @route 'about'       , path: '/about/:position'
+
+Rashomon.Router.reopen notifyGoogleAnalytics: (->
+  ga('send', 'pageview', page: @get('url'), title: @get('url'))
+).on('didTransition')
