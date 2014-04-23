@@ -305,6 +305,19 @@ module.exports = function (grunt) {
                 }
             }
         },
+        replace: {
+            assets: {
+                src: ['<%= yeoman.dist %>/*.html'],
+                overwrite: true,
+                replacements: [{
+                    from: /href=\"(styles\/.+\.css)/g,
+                    to: 'href=\"http://gaiamagic.qiniudn.com\/$1'
+                }, {
+                    from: /<script\ src=\"(scripts\/.+\.js)/g,
+                    to: '<script\ src=\"http://gaiamagic.qiniudn.com\/$1'
+                }]
+            }
+        },
         neuter: {
             app: {
                 options: {
@@ -355,7 +368,8 @@ module.exports = function (grunt) {
         'uglify',
         'copy',
         'rev',
-        'usemin'
+        'usemin',
+        'replace'
     ]);
 
     grunt.registerTask('default', [
