@@ -306,6 +306,14 @@ module.exports = function (grunt) {
             }
         },
         replace: {
+            templateImagesBeforeBuild: {
+                src: ['<%= yeoman.app %>/templates/**/*.hbs'],
+                overwrite: true,
+                replacements: [{
+                    from: /(\/images\/.+\.png)/g,
+                    to: 'http://gaiamagic.qiniudn.com$1'
+                }]
+            },
             assets: {
                 src: ['<%= yeoman.dist %>/*.html'],
                 overwrite: true,
@@ -360,6 +368,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('build', [
         'clean:dist',
+        'replace:templateImagesBeforeBuild',
         'useminPrepare',
         'concurrent:dist',
         'neuter:app',
@@ -369,7 +378,7 @@ module.exports = function (grunt) {
         'copy',
         'rev',
         'usemin',
-        'replace'
+        'replace:assets'
     ]);
 
     grunt.registerTask('default', [
