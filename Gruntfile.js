@@ -311,7 +311,7 @@ module.exports = function (grunt) {
                 overwrite: true,
                 replacements: [{
                     from: /(\/images\/.+\.png)/g,
-                    to: 'http://gaiamagic.qiniudn.com$1'
+                    to: '//dn-gaiamagic.qbox.me$1'
                 }]
             },
             assets: {
@@ -319,10 +319,10 @@ module.exports = function (grunt) {
                 overwrite: true,
                 replacements: [{
                     from: /href=\"(styles\/.+\.css)/g,
-                    to: 'href=\"http://gaiamagic.qiniudn.com\/$1'
+                    to: 'href=\"//dn-gaiamagic.qbox.me\/$1'
                 }, {
                     from: /<script\ src=\"(scripts\/.+\.js)/g,
-                    to: '<script\ src=\"http://gaiamagic.qiniudn.com\/$1'
+                    to: '<script\ src=\"//dn-gaiamagic.qbox.me\/$1'
                 }]
             }
         },
