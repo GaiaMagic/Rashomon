@@ -1,55 +1,58 @@
 Rashomon.JobsFixtures = [
   {
-    title: 'Rails 工程师',
-    slug: 'rails',
+    title: '后端工程师',
+    slug: 'backend',
     content_html: '
       <p class="detail">
-          技术栈：
+          工作职责：
       </p>
-
       <ul class="section-list">
-          <li>Ruby &amp;&amp; Rails &amp;&amp; RSpec</li>
-          <li>MongoDB &amp;&amp; PostgreSQL &amp;&amp; Redis</li>
-          <li>JavaScript &amp;&amp; CoffeeScript &amp;&amp; jQuery</li>
-          <li>SASS</li>
-          <li>Git</li>
-          <li>Mac || Linux</li>
+          <li>负责系统后台研发，实现产品需求</li>
+          <li>提升系统稳定性、安全性、扩展性</li>
       </ul>
 
       <p class="u-marginTl detail">
-          加分项：
+          职位要求：
       </p>
-
       <ul class="section-list">
-          <li>Vim || Emacs</li>
-          <li>对其他语言也有了解，如 Python、PHP 等</li>
-          <li>参与过开源项目并有所贡献</li>
-          <li>有独立的技术 Blog</li>
+          <li>2年以上的后端开发经验</li>
+          <li>熟悉 Ruby/Python，对问题游刃有余</li>
+          <li>熟悉各种常用的工具库</li>
+          <li>熟悉至少 1 种开源框架，Rails 优先</li>
+          <li>熟悉各种存储，PostgreSQL，Redis，有优化经验的优先</li>
+          <li>熟悉Linux系统</li>
+          <li>有并发优化、稳定性优化经验的优先</li>
       </ul>
 
-      <p class="u-marginTl detail">
-          简历请附：
+      <p class="u-marginTl">
+        <span class="detail">待遇：</span> <span>15-25K</span>
       </p>
-
-      <ul class="section-list">
-        <li>参与过的项目或直接 GitHub 账号</li>
-        <li>你最欣赏的网站或者手机 APP </li>
-      </ul>
     '
-  },
+  }
   {
     title: '前端工程师',
     slug: 'frontend',
     content_html: '
       <p class="detail">
-          技术栈：
+          工作职责：
       </p>
 
       <ul class="section-list">
-          <li>JavaScript && Html5 && CSS3 && jQuery</li>
-          <li>Git</li>
-          <li>Mac || Linux</li>
-          <li>AngularJS || Ember.js 等其它相似的前端 MVC 框架</li>
+          <li>负责PC和mobile上的页面开发，实现产品需求</li>
+          <li>提升页面兼容性</li>
+          <li>优化页面访问速度</li>
+      </ul>
+
+      <p class="u-marginTl detail">
+          职位要求：
+      </p>
+
+      <ul class="section-list">
+        <li>有2年以上的前端开发经验</li>
+        <li>熟悉JS、jQuery、CSS、Html5</li>
+        <li>AngularJS || Ember.js 等其它相似的前端 MVC 框架</li>
+        <li>熟悉Git</li>
+        <li>熟悉Mac/Linux</li>
       </ul>
 
       <p class="u-marginTl detail">
@@ -57,142 +60,232 @@ Rashomon.JobsFixtures = [
       </p>
 
       <ul class="section-list">
-          <li>Vim || Emacs</li>
-          <li>对其他语言也有了解，如 Ruby、Python 等</li>
-          <li>参与过开源项目并有所贡献</li>
-          <li>有独立的技术 Blog</li>
-      </ul>
+        <li>会php/python/ruby/nodejs的优先</li>
+        <li>有参与过开源项目的优先</li>
+      <ul>
 
-      <p class="u-marginTl detail">
-          简历请附：
+      <p class="u-marginTl">
+        <span class="detail">待遇：</span> <span>15-25K</span>
       </p>
-
-      <ul class="section-list">
-        <li>参与过的项目或直接 GitHub 账号</li>
-        <li>你最欣赏的网站或者手机 APP </li>
-      </ul>
     '
   },
   {
     title: "iOS 工程师",
     slug: 'ios',
     content_html: '
+      <p class="detail">
+        工作职责
+      </p>
       <ul class="section-list">
-          <li>能做出牛逼 APP 的</li>
-          <li>有音频、音乐类、交易类开发经验更佳</li>
-          <li>简历附上自己欣赏的 APP 和原因</li>
-      </ul>
+        <li>负责根据需求设计、研发iOS客户端产品</li>
+        <li>研究iOS新兴技术，开发新玩法，新功能</li>
+      <ul>
+
+    <p class="u-marginTl detail">
+      职位要求
+    </p>
+    <ul class="section-list">
+      <li>有开发完整App经验，或核心模块的开发经验</li>
+      <li>熟悉iOS的持久化存储，多线程，网络通讯</li>
+      <li>熟悉iOS布局设，UI渲染机制，开发新控件</li>
+      <li>熟悉相关开源工具</li>
+    </ul>
+
+      <p class="u-marginTl">
+        <span class="detail">待遇：</span> <span>15-25K</span>
+      </p>
     '
   },
   {
-    title: "安卓工程师",
+    title: "安桌工程师",
     slug: 'android',
     content_html: '
-      <ul class="section-list">
-          <li>能做出牛逼 APP 的</li>
-          <li>能很好兼容多种屏幕尺寸和性能</li>
-          <li>有音频、音乐类、交易类开发经验更佳</li>
-          <li>简历附上自己欣赏的 APP 和原因</li>
-      </ul>
-    '
-  },
-  {
-    title: "设计师",
-    slug: 'designer',
-    content_html: '
-      <p>
-          一直以来，商业世界都是在讨论一间企业里面什么才是最重要的。沃尔玛的低成本运作很重要，戴尔电脑的直销模式很重要，Google 的技术创新很重要。
+      <p class="detail">
+        工作职责：
       </p>
+      <ul class="section-list">
+        <li>研究Android新兴技术，开发新玩法，新功能</li>
+      </ul>
+
+      <p class="u-marginTl detail">
+        职位要求：
+      </p>
+      <ul class="section-list">
+        <li>有开发完整App经验，或核心模块的开发经验</li>
+        <li>有扎实的Java语言基础</li>
+        <li>熟悉Android UI事件传递、布局、绘制等原理</li>
+        <li>熟悉Android下通信机制，对移动网络的特点有较为深入的理解和经验</li>
+        <li>熟悉Android平台内存管理机制、进程管理机制、任务管理机制 、网络通信机制</li>
+        <li>熟悉Android下的开源框架，了解各种优化技术，以及常见的系统问题  </li>
+        <li>熟悉OOP和常用设计模式</li>
+      </ul>
 
       <p class="u-marginTl">
-          但是直到苹果的出现，乔布斯才告诉全世界，设计和体验很重要。
+        <span class="detail">待遇：</span> <span>15-25K</span>
       </p>
+    '
+  },
+  {
+    title: "UI设计师",
+    slug: 'ui',
+    content_html: '
+      <p class="detail">
+        工作职责：
+      </p>
+      <ul class="section-list">
+        <li>设完成界面、图标、动画等图形界面设计，并制定界面的实现标准</li>
+        <li>与研发团队充分沟通协作，确认可控的误差范围和视觉效果的最终实现</li>
+      </ul>
+
+      <p class="u-marginTl detail">
+        职位要求：
+      </p>
+      <ul class="section-list">
+        <li>熟练 PS、AI、ID 等软件</li>
+        <li>逻辑思维清晰,做事认真、细致,表达能力强</li>
+        <li>熟悉主流设计动向</li>
+      </ul>
 
       <p class="u-marginTl">
-          我们也是抱着这个想法去努力的，希望做出最优体验，最佳设计。而现在，我们希望招募最具灵气的设计师。
+        <span class="detail">待遇：</span> <span>6-12K</span>
+      </p>
+    '
+  },
+  {
+    title: "视觉设计师",
+    slug: 'vi',
+    content_html: '
+      <p class="detail">
+        工作职责：
       </p>
 
-      <p class="u-marginTl detail">职责：</p>
-
       <ul class="section-list">
-          <li>设计全公司的 APP、网站、Banner、Logo、印刷品</li>
-          <li>产品的交互效果和逻辑</li>
+        <li>协助运营，为其提供所需的视觉设计支持</li>
       </ul>
 
-      <p class="u-marginTl detail">要求：</p>
-
-      <ul class="section-list">
-          <li>在细节和简单中找平衡，做出让人情不自禁 Wow 的设计</li>
-          <li>了解 Web 和移动端的交互并能有所创新，让产品用起来更自然，交互更不露痕迹</li>
-          <li>思维能力强，对不同设计对象都能瞬间能找到重点</li>
-      </ul>
-
-      <p class="u-marginTl detail">加分项：</p>
-
-      <ul class="section-list">
-          <li>有 Dribbble 账号</li>
-          <li>能手绘，有美学基础</li>
-          <li>了解前端</li>
-          <li>有 UI 类的自媒体账号</li>
-      </ul>
-
-      <p class="u-marginTl detail">简历请附：</p>
-
-      <ul class="section-list">
-          <li>部分能代表水平的作品</li>
-          <li>你最欣赏的网站或者手机 App </li>
-      </ul>
-    '
-  },
-  {
-    title: "项目经理",
-    slug: 'project-manager',
-    content_html: '
-      <p>
-          我们产品包括音乐人攻略、合拍音乐、有演出，音乐产业里基本没有不能合作的小伙伴了。所以我们需要多名有独特资源、有创意、能谈合作、能执行的项目经理。我们对所有能产生影响力，能带来改变，能获得用户，能帮助音乐人的任何合作感兴趣。你可以带着自己的创意过来，用我们的资源去实现。
+      <p class="u-marginTl detail">
+        职位要求：
       </p>
-
-      <ul class="section-list u-marginTl">
-          <li>演出、版权、音乐制作与出版、现场活动、经纪等领域都欢迎</li>
-          <li>工作地点不限，全职兼职项目制都可</li>
-      </ul>
-    '
-  },
-  {
-    title: "媒体与对外宣传",
-    slug: 'bd',
-    content_html: '
-      <p>负责我们产品的媒体方向的对外宣传，将我们的理念最大限度地传递出去，在合作伙伴和用户心目中建立起我们的品牌。</p>
-
-      <ul class="section-list u-marginTl">
-          <li>文案了得，创意十足，游刃跳转在产品介绍、微博、通稿、专题页</li>
-          <li>拥有大量媒体资源，音乐、商业、科技、创业的新媒体纸媒通杀</li>
-          <li>社交狂，低头党，自来熟，开拓能力一流</li>
-      </ul>
-    '
-  },
-  {
-    title: "有演出运营总监",
-    slug: 'youyanchu'
-    content_html: '
       <ul class="section-list">
-          <li>与主办方、票务方、场地方、音乐节建立紧密关系，开展合作</li>
-          <li>带领团队推动全国线下活动</li>
-          <li>有大型票务公司工作经验更佳</li>
+        <li>熟悉标志 VI 设计、企业品牌形象设计、画册设计、包装设计等</li>
+        <li>熟悉主流设计动向</li>
       </ul>
+
+      <p class="u-marginTl detail">
+        加分项：
+      </p>
+      <ul class="section-list">
+        <li>精通交互动画制作 （AE）</li>
+        <li>会翻墙</li>
+        <li>熟悉现今主流数码软硬件发展</li>
+        <li>不更新不舒服斯基</li>
+        <li>爱吐糟</li>
+        <li>整理控</li>
+      </ul>
+
+      <p class="u-marginTl">
+        <span class="detail">待遇：</span> <span>6-12K</span>
+      </p>
     '
   },
   {
-    title: "音乐人攻略编辑",
-    slug: 'mg'
+    title: "产品经理",
+    slug: 'pm',
     content_html: '
+      <p class="detail">
+        工作职责：
+      </p>
       <ul class="section-list">
-          <li>撰写音乐终极攻略系列文章，能采访，文笔好</li>
-          <li>了解音乐行业</li>
-          <li>对音乐人推广、演出、经营、版权、乐器、电脑音乐、制作等领域有所了解</li>
-          <li>有一定行业资源与人脉</li>
-          <li>英语好，有媒体经验更佳</li>
+        <li>负责产品的概念设计、原型设计，协调研发资源实现产品原型，推动原型产品到商用产品的转化；</li>
+        <li>协调实施产品研发，达成产品设计目标，对产品效果负责；</li>
+        <li>通过用户调研、竞品分析、运营数据等多种渠道获取产品改进方向，优化产品设计方案，推动方案执行，提升客户对产品的满意度。</li>
       </ul>
+
+      <p class="u-marginTl detail">
+        职位要求：
+      </p>
+      <ul class="section-list">
+        <li>具有良好的逻辑思维能力，能够将线下流程抽象为标准工作流程</li>
+      </ul>
+
+      <p class="u-marginTl">
+        <span class="detail">待遇：</span> <span>6-12K</span>
+      </p>
+    '
+  },
+  {
+    title: "品牌运营",
+    slug: 'bd'
+    content_html: '
+      <p class="detail">
+        职位要求：
+      </p>
+      <ul class="section-list">
+        <li>拥有大量媒体资源，音乐、商业、科技、创业的新媒体纸媒通杀 </li>
+        <li>社交狂，低头党，自来熟，开拓能力一流</li>
+      </ul>
+
+      <p class="u-marginTl">
+        <span class="detail">待遇：</span> <span>6-12K</span>
+      </p>
+    '
+  },
+  {
+    title: "渠道商务经理（北京）",
+    slug: 'judao'
+    content_html: '
+      <p class="detail">
+        职位描述：
+      </p>
+      <ul class="section-list">
+        <li>负责与各大热门APP、广告平台、目标用户群一致的相关网站、社区进行合作，整合各类线上、和资源,进行APP推广，渠道维护；</li>
+        <li>对运营数据、用户行为数据等进行分析和挖掘，提升推广质量；</li>
+        <li>负责APP产品推广及活动策划，进行事件营销、口碑营销等推广方案的策划和组织执行。</li>
+        <li>配合合作渠道进行运营推广、内容更新及各种活动策划及上线发布跟进；力争获取最大的渠道新增以及最优质的渠道留存。</li>
+      </ul>
+
+      <p class="u-marginTl detail">
+        任职资格:
+      </p>
+      <ul class="section-list">
+        <li>1年以上APP推广工作经验；</li>
+        <li>掌握常用线上推广渠道、方式、方法以及合作模式，具有完善的渠道建设和监控经验；</li>
+        <li>在行业有资深的人脉关系，包括但不限于应用市场、广告平台、卖场等；</li>
+        <li>较强的文案策划能力，良好语言及文字表达能力。</li>
+      </ul>
+
+      <p class="u-marginTl">
+        <span class="detail">待遇：</span> <span>6-12K</span>
+      </p>
+    '
+  }
+  {
+    title: "HR助理（北京）",
+    slug: 'hr-assistant'
+    content_html: '
+      <p class="detail">
+        职位描述
+      </p>
+      <ul class="section-list">
+        <li>配合完成认识招聘工作，网络招聘职位定期更新、发布、维护。</li>
+        <li>简历筛选、及电话初步沟通、面试安排。</li>
+        <li>面试过程跟踪、面试数据、面试文档整理。</li>
+        <li>员工管理日常工作，办理日常手续及资料整理。</li>
+        <li>领导交办的其他事项。 </li>
+      </ul>
+
+      <p class="u-marginTl detail">
+        任职要求：
+      </p>
+      <ul class="section-list">
+        <li>工作经验：一年。</li>
+        <li>培训经历：接受过人力资源专业知识，劳动法律法规等方面的培训优先。</li>
+        <li>技能技巧：优秀的表达能力、沟通能力，熟练使用office等办公软件。</li>
+      </ul>
+
+      <p class="u-marginTl">
+        <span class="detail">待遇：</span> <span>3-6K</span>
+      </p>
     '
   }
 ]
