@@ -214,30 +214,43 @@ Rashomon.JobsFixtures = [
     '
   },
   {
-    title: "品牌运营",
-    slug: 'bd'
+    title: "PR 公关高级经理",
+    slug: 'pr'
     content_html: '
       <p class="detail">
+        工作职责：
+      </p>
+      <ul class="section-list">
+        <li>根据品牌的整体发展方向，制定品牌规划、媒体宣传推广等策划方案，并组织实施</li>
+        <li>优秀文笔功力，熟悉新闻媒体采编规律，擅长撰写各类稿件</li>
+        <li>收集并整理客户及其竞争对手的基本行业信息</li>
+        <li>危机公关应对 处理负面新闻</li>
+      </ul>
+
+      <p class="u-marginTl detail">
         职位要求：
       </p>
       <ul class="section-list">
-        <li>拥有大量媒体资源，音乐、商业、科技、创业的新媒体纸媒通杀 </li>
-        <li>社交狂，低头党，自来熟，开拓能力一流</li>
+        <li>本科以上学历，两年以上相关工作经验</li>
+        <li>有互联网，企业公关工作经验，或媒体经验优先</li>
+        <li>熟悉互联网或音乐行业，有较强市场研究判断能力和分析能力</li>
+        <li>良好的协调能力及危机公关处理能力</li>
       </ul>
 
       <p class="u-marginTl">
-        <span class="detail">待遇：</span> <span>6-12K</span>
+        <span class="detail">待遇：</span> <span>8-16k</span>
       </p>
     '
   },
   {
-    title: "渠道商务经理（北京）",
+    title: "商务渠道高级经理（北京）",
     slug: 'judao'
     content_html: '
       <p class="detail">
         职位描述：
       </p>
       <ul class="section-list">
+        <li>负责APP在应用商店、下载市场等android/ios应用平台的运营推广；</li>
         <li>负责与各大热门APP、广告平台、目标用户群一致的相关网站、社区进行合作，整合各类线上、和资源,进行APP推广，渠道维护；</li>
         <li>对运营数据、用户行为数据等进行分析和挖掘，提升推广质量；</li>
         <li>负责APP产品推广及活动策划，进行事件营销、口碑营销等推广方案的策划和组织执行。</li>
@@ -248,6 +261,7 @@ Rashomon.JobsFixtures = [
         任职资格:
       </p>
       <ul class="section-list">
+        <li>专科及以上学历；</li>
         <li>1年以上APP推广工作经验；</li>
         <li>掌握常用线上推广渠道、方式、方法以及合作模式，具有完善的渠道建设和监控经验；</li>
         <li>在行业有资深的人脉关系，包括但不限于应用市场、广告平台、卖场等；</li>
@@ -255,36 +269,42 @@ Rashomon.JobsFixtures = [
       </ul>
 
       <p class="u-marginTl">
-        <span class="detail">待遇：</span> <span>6-12K</span>
+        <span class="detail">待遇：</span> <span>8-16K</span>
       </p>
     '
   }
   {
-    title: "HR助理（北京）",
+    title: "HR 人事经理（北京）",
     slug: 'hr-assistant'
     content_html: '
       <p class="detail">
-        职位描述
+        岗位职责：
       </p>
       <ul class="section-list">
-        <li>配合完成认识招聘工作，网络招聘职位定期更新、发布、维护。</li>
-        <li>简历筛选、及电话初步沟通、面试安排。</li>
-        <li>面试过程跟踪、面试数据、面试文档整理。</li>
-        <li>员工管理日常工作，办理日常手续及资料整理。</li>
-        <li>领导交办的其他事项。 </li>
+        <li>更新招聘职位描述，发布刷新招聘广告</li>
+        <li>负责投递简历的甄别、筛选、电话面试、专业知识测评等</li>
+        <li>协助组织人员初试、复试、和终试，确定合适人选，报上级主管审批</li>
+        <li>负责招聘数据统计、招聘数据分析、招聘工作总结以及相关资料的归类存档</li>
+        <li>协调、办理员工入职、离职、调任、升职等手续</li>
+        <li>维护招聘简历库，建立后备人才选拔方案和人才储备数据库，管理员工人事档案</li>
+        <li>统计请假和各类休假等核实及汇总</li>
+        <li>社会保险（包括缴费、退办、变更、拉所有参保人员明细单等）及时有效</li>
+        <li>积极了解、掌握社保方面知识、信息动向和劳动法规等</li>
+        <li>建立、维护人事档案，办理和更新劳动合同</li>
       </ul>
 
       <p class="u-marginTl detail">
         任职要求：
       </p>
       <ul class="section-list">
-        <li>工作经验：一年。</li>
-        <li>培训经历：接受过人力资源专业知识，劳动法律法规等方面的培训优先。</li>
-        <li>技能技巧：优秀的表达能力、沟通能力，熟练使用office等办公软件。</li>
+        <li>统招大专以上学历，企业管理或人力资源相关专业，1年以上人事行政工作经验</li>
+        <li>熟悉社保和各项政策，并且有实务操作能力</li>
+        <li>熟练使用办公软件如Word、Excel、ppt等办公软件</li>
+        <li>较强的组织、沟通能力与综合协调能力，具备较好的亲和力与人际关系处理能力，具有良好的心态</li>
       </ul>
 
       <p class="u-marginTl">
-        <span class="detail">待遇：</span> <span>3-6K</span>
+        <span class="detail">待遇：</span> <span>5-10K</span>
       </p>
     '
   }
