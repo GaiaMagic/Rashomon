@@ -1,27 +1,27 @@
 .aside {
-    width: $aside-width;
+    width: @aside-width;
     padding-top: 50px;
 
     &.sticky {
         position: fixed;
-        top: $header-height;
+        top: @header-height;
     }
 }
 
 .aside-header {
     line-height: 40px;
     font-size: 20px;
-    color: $color-blue;
+    color: @color-blue;
 }
 
 .aside-links {
     a {
-        color: $color-gray-light;
+        color: @color-gray-light;
         line-height: 32px;
         font-size: 16px;
 
         &.active {
-            color: $color-aside-link-hover;
+            color: @color-aside-link-hover;
         }
     }
 }

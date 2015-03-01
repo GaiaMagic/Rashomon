@@ -1,5 +1,5 @@
 .btn-base {
-    color: $color-text;
+    color: @color-text;
     padding: 0 30px;
     display: inline-block;
     text-align: center;
@@ -8,49 +8,49 @@
 }
 
 .btn {
-    @extend .btn-base;
+    &:extend(.btn-base);
 
     cursor: pointer;
     border: none;
-    background: $color-white;
+    background: @color-white;
 
     &:hover, &:focus {
-        color: $color-white;
-        background: $color-white;
+        color: @color-white;
+        background: @color-white;
 
         [class^="icon-"]:before, [class*=" icon-"]:before {
-            color: $color-blue;
+            color: @color-blue;
         }
     }
 }
 
 .btn-medium {
-    @extend .rounded;
+    &:extend(.rounded);
 
-    height: $btn-medium-height;
-    line-height: $btn-medium-height;
+    height: @btn-medium-height;
+    line-height: @btn-medium-height;
 }
 
 .btn-blue {
-    color: $color-white;
-    background: $color-blue-light;
+    color: @color-white;
+    background: @color-blue-light;
 
     &:hover, &:focus {
-        background: $color-blue-light;
+        background: @color-blue-light;
     }
 }
 
 .btn-red {
-    color: $color-white;
-    background: $color-red;
+    color: @color-white;
+    background: @color-red;
 
     &:hover, &:focus {
-        background: $color-red;
+        background: @color-red;
     }
 }
 
 .btn-green {
-    color: $color-white;
+    color: @color-white;
     background: #84cc53;
 
     &:hover, &:focus {
@@ -59,16 +59,16 @@
 }
 
 .btn-yellow {
-    color: $color-white;
-    background: $color-yellow;
+    color: @color-white;
+    background: @color-yellow;
 
     &:hover, &:focus {
-        background: $color-yellow;
+        background: @color-yellow;
     }
 }
 
 .btn-taobao {
-    color: $color-white;
+    color: @color-white;
     background: #fc8220;
 
     &:hover, &:focus {

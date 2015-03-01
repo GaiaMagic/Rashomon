@@ -1,0 +1,36 @@
+.footer {
+    background-color: @color-footer-background;
+}
+
+.footer-inner {
+    width: @width-global;
+    height: @footer-height;
+}
+
+.footer-group {
+    width: @footer-group-width;
+    margin-top: @footer-padding-top;
+
+    &.with-image {
+        width: @width-global - 4 * @footer-group-width;
+    }
+
+    .image-link {
+        margin-right: 25px;
+    }
+
+    a {
+        color: @color-text;
+    }
+}
+
+.footer-group-name {
+    color: @color-white;
+    font-size: 14px;
+}
+
+.footer-copyright {
+    height: @footer-copyright-height;
+    line-height: @footer-copyright-height;
+    background-color: #1c1f23;
+}

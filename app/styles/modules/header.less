@@ -1,6 +1,6 @@
 .header {
-    background: $color-white;
-    height: $header-height;
+    background: @color-white;
+    height: @header-height;
     border-top: 4px solid #2889e9;
     border-bottom: 1px solid #c4c4c4;
     /*box-shadow: 0 3px 3px #ededed;*/
@@ -12,12 +12,12 @@
 }
 
 .header-inner {
-    width: $width-global;
+    width: @width-global;
 }
 
 .header-logo {
     margin-left: 26px;
-    line-height: $header-height;
+    line-height: @header-height;
 }
 
 .header-nav {
@@ -27,11 +27,11 @@
         float: left;
         margin-left: 40px;
         padding: 0;
-        color: $color-gray-light;
-        line-height: $header-height;
+        color: @color-gray-light;
+        line-height: @header-height;
 
         &.active {
-            color: $color-blue;
+            color: @color-blue;
         }
     }
 }
