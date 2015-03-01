@@ -210,16 +210,6 @@ module.exports = function (grunt) {
                 dirs: ['<%= yeoman.dist %>']
             }
         },
-        imagemin: {
-            dist: {
-                files: [{
-                    expand: true,
-                    cwd: '<%= yeoman.app %>/images',
-                    src: '{,*/}*.{png,jpg,jpeg}',
-                    dest: '<%= yeoman.dist %>/images'
-                }]
-            }
-        },
         svgmin: {
             dist: {
                 files: [{
@@ -275,6 +265,11 @@ module.exports = function (grunt) {
                         'images/{,*/}*.{webp,gif}',
                         'styles/fonts/*'
                     ]
+                }, {
+                    expand: true,
+                    cwd: '<%= yeoman.app %>/images',
+                    src: '{,*/}*.{png,jpg,jpeg}',
+                    dest: '<%= yeoman.dist %>/images'
                 }]
             }
         },
@@ -292,7 +287,6 @@ module.exports = function (grunt) {
                 'emberTemplates',
                 'coffee',
                 'less:dist',
-                'imagemin',
                 'svgmin',
                 'htmlmin'
             ]
