@@ -184,9 +184,22 @@ module.exports = function (grunt) {
                 }
             }
         },
+        preprocess: {
+            index: {
+                options: {
+                    context: {
+                        PRODUCTION: true
+                    }
+                },
+                files: {
+                    '<%= yeoman.dist %>/index.html': '<%= yeoman.app %>/index.html'
+                }
+            }
+        },
         useminPrepare: {
-            html: '<%= yeoman.app %>/index.html',
+            html: '<%= yeoman.dist %>/index.html',
             options: {
+                root: '<%= yeoman.app %>',
                 dest: '<%= yeoman.dist %>'
             }
         },
@@ -243,7 +256,7 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     cwd: '<%= yeoman.app %>',
-                    src: '*.html',
+                    src: ['*.html', '!index.html'],
                     dest: '<%= yeoman.dist %>'
                 }]
             }
@@ -344,6 +357,18 @@ module.exports = function (grunt) {
         }
     });
 
+    grunt.registerTask('updateUseminPrepare', function () {
+        // move vendors script from uglify to copy
+        var copies = grunt.config.data.copy.dist.files;
+        var uglifies = grunt.config.data.uglify.generated.files;
+        for (var i = uglifies.length - 1; i > -1; i--) {
+            if (uglifies[i].dest.indexOf('vendors') > -1) {
+                var deleted = uglifies.splice(i, 1);
+                copies.push(deleted);
+            }
+        }
+    });
+
     grunt.renameTask('regarde', 'watch');
 
     grunt.registerTask('server', function (target) {
@@ -373,7 +398,9 @@ module.exports = function (grunt) {
     grunt.registerTask('build', [
         'clean:dist',
         'replace:templateImagesBeforeBuild',
+        'preprocess',
         'useminPrepare',
+        'updateUseminPrepare',
         'concurrent:dist',
         'neuter:app',
         'concat',

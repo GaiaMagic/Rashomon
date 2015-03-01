@@ -10,7 +10,7 @@
 
         <link rel="shortcut icon" href="/favicon.ico?v=20131225">
 
-        <!-- build:css styles/components.css -->
+        <!-- build:css(<%= yeoman.app %>) styles/components.css -->
         <link rel="stylesheet" href="/bower_components/normalize-css/normalize.css">
         <link rel="stylesheet" href="/bower_components/suit-base/base.css">
         <link rel="stylesheet" href="/bower_components/suit-utils-text/text.css">
@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="/bower_components/suit-utils-display/display.css">
         <!-- endbuild -->
 
-        <!-- build:css styles/main.css -->
+        <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="/styles/main.css">
         <!-- endbuild -->
     </head>
@@ -35,19 +35,24 @@
             ga('create', 'UA-28612529-1', 'gaiamagic.com');
         </script>
 
-        <!-- build:js scripts/components.js -->
+        <!-- @exclude -->
         <script src="/bower_components/jquery/dist/jquery.js"></script>
         <script src="/bower_components/handlebars/handlebars.runtime.js"></script>
         <script src="/bower_components/ember/ember.js"></script>
         <script src="/scripts/jquery.boutique.js"></script>
         <script src="/scripts/bootstrap-popover.js"></script>
+        <!-- @endexclude -->
+        <!-- build:js scripts/vendors.js -->
+        <!-- @if PRODUCTION=true !>
+        <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="/bower_components/handlebars/handlebars.runtime.min.js"></script>
+        <script src="/bower_components/ember/ember.min.js"></script>
+        <script src="/scripts/jquery.boutique.js"></script>
+        <script src="/scripts/bootstrap-popover.min.js"></script>
+        <!-- @endif -->
         <!-- endbuild -->
-
-        <!-- build:js(.tmp) scripts/templates.js -->
+        <!-- build:js(.tmp) scripts/bundle.js -->
         <script src="/scripts/compiled-templates.js"></script>
-        <!-- endbuild -->
-
-        <!-- build:js(.tmp) scripts/main.js -->
         <script src="/scripts/combined-scripts.js"></script>
         <!-- endbuild -->
     </body>
