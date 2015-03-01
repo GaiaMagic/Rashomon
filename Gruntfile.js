@@ -287,34 +287,46 @@ module.exports = function (grunt) {
         emberTemplates: {
             options: {
                 templateName: function (sourceFile) {
-                    var templatePath = yeomanConfig.app + '/templates/';
+                    var templatePath = '.tmp/templates/';
                     return sourceFile.replace(templatePath, '');
                 }
             },
             dist: {
                 files: {
-                    '.tmp/scripts/compiled-templates.js': '<%= yeoman.app %>/templates/{,*/}*.hbs'
+                    '.tmp/scripts/compiled-templates.js': '.tmp/templates/{,*/}*.hbs'
                 }
             }
         },
         replace: {
             templateImagesBeforeBuild: {
-                src: ['<%= yeoman.app %>/templates/**/*.hbs'],
-                overwrite: true,
-                replacements: [{
-                    from: /(\/images\/.+\.png)/g,
-                    to: '//dn-gaiamagic.qbox.me$1'
+                options: {
+                    patterns: [{
+                        match: /(\/images\/.+\.png)/g,
+                        replacement: '//dn-gaiamagic.qbox.me$1'
+                    }]
+                },
+                files: [{
+                    expand: true,
+                    cwd: '<%= yeoman.app %>/templates',
+                    src: '**/*.hbs',
+                    dest: '.tmp/templates'
                 }]
             },
             assets: {
-                src: ['<%= yeoman.dist %>/*.html'],
-                overwrite: true,
-                replacements: [{
-                    from: /href=\"(styles\/.+\.css)/g,
-                    to: 'href=\"//dn-gaiamagic.qbox.me\/$1'
-                }, {
-                    from: /<script\ src=\"(scripts\/.+\.js)/g,
-                    to: '<script\ src=\"//dn-gaiamagic.qbox.me\/$1'
+                options: {
+                    patterns: [{
+                        match: /href=\"(styles\/.+\.css)/g,
+                        replacement: 'href=\"//dn-gaiamagic.qbox.me\/$1'
+                    }, {
+                        match: /<script\ src=\"(scripts\/.+\.js)/g,
+                        replacement: '<script\ src=\"//dn-gaiamagic.qbox.me\/$1'
+                    }]
+                },
+                files: [{
+                    expand: true,
+                    cwd: '<%= yeoman.dist %>',
+                    dest: '<%= yeoman.dist %>',
+                    src: '*.html'
                 }]
             }
         },
