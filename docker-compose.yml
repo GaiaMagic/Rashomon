@@ -1,0 +1,4 @@
+frontend:
+  build: .
+  volumes:
+    - '/srv/gaiamagic/rashomon/dist:/rashomon/dist'

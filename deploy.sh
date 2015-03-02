@@ -26,7 +26,7 @@ fi
 ssh $USER@$HOST "mkdir -p $TARGET/$DIR"
 for i in `seq 10`
 do
-  rsync dist/* $USER@$HOST:$TARGET/$DIR --rsh=ssh --recursive --delete --delete-excluded -v -h --progress -i --timeout=$TIMEOUT
+  rsync dist/latest/* $USER@$HOST:$TARGET/$DIR --rsh=ssh --recursive --delete --delete-excluded -v -h --progress -i --timeout=$TIMEOUT
   if [ "$?" -eq "0" ]; then
       echo "rsync: success"
       echo "updating <dist> soft link to $DIR"

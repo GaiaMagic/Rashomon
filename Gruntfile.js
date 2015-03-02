@@ -15,10 +15,26 @@ module.exports = function (grunt) {
     // load all grunt tasks
     require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
+    var now = new Date();
+    var pad0 = function (n) { return n < 10 ? '0' + n : n; };
+    var VER = [
+        now.getFullYear(),
+        pad0(now.getMonth() + 1),
+        pad0(now.getDate()),
+        pad0(now.getHours()),
+        pad0(now.getMinutes()),
+        pad0(now.getSeconds())
+    ].join('_');
+    var DISTDIR = 'dist';
+    var dist = DISTDIR + '/' + VER;
+    var MAX_REVS = 10;
+
     // configurable paths
     var yeomanConfig = {
         app: 'app',
-        dist: 'dist'
+        ver: VER,
+        dir: DISTDIR,
+        dist: dist
     };
 
     grunt.initConfig({
@@ -96,16 +112,7 @@ module.exports = function (grunt) {
             }
         },
         clean: {
-            dist: {
-                files: [{
-                    dot: true,
-                    src: [
-                        '.tmp',
-                        '<%= yeoman.dist %>/*',
-                        '!<%= yeoman.dist %>/.git*'
-                    ]
-                }]
-            },
+            dist: ['.tmp'],
             server: '.tmp'
         },
         jshint: {
@@ -363,6 +370,26 @@ module.exports = function (grunt) {
         }
     });
 
+    grunt.registerTask('link', function () {
+        require('child_process').
+            exec('ln -nfs ' + yeomanConfig.ver + ' dist/latest', this.async());
+    });
+
+    grunt.registerTask('clean-dist', function () {
+        var fs = require('fs');
+        var dirsToDel = [];
+        var dirs = fs.readdirSync(yeomanConfig.dir).filter(function (file) {
+            return fs.lstatSync(yeomanConfig.dir + '/' + file).isDirectory();
+        });
+        dirs.sort();
+        if (dirs.length > MAX_REVS) {
+            dirsToDel = dirs.slice(0, dirs.length - MAX_REVS).map(function (dir) {
+                return yeomanConfig.dir + '/' + dir;
+            });
+        }
+        require('del')(dirsToDel, this.async());
+    });
+
     grunt.renameTask('regarde', 'watch');
 
     grunt.registerTask('server', function (target) {
@@ -403,7 +430,9 @@ module.exports = function (grunt) {
         'copy',
         'rev',
         'usemin',
-        'replace:assets'
+        'replace:assets',
+        'link',
+        'clean-dist'
     ]);
 
     grunt.registerTask('default', [
