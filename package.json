@@ -2,6 +2,8 @@
   "name": "rashomon",
   "version": "0.0.0",
   "dependencies": {},
+  "repository": "https://github.com/GaiaMagic/Rashomon",
+  "license": "UNLICENSED",
   "devDependencies": {
     "del": "^1.1.1",
     "grunt": "^0.4.5",

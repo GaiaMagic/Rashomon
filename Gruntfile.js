@@ -282,6 +282,7 @@ module.exports = function (grunt) {
         },
         concurrent: {
             server: [
+                'replace',
                 'emberTemplates',
                 'coffee:dist',
                 'less:server'
@@ -291,6 +292,7 @@ module.exports = function (grunt) {
                 'less'
             ],
             dist: [
+                'replace',
                 'emberTemplates',
                 'coffee',
                 'less:dist',
